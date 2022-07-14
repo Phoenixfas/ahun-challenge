@@ -1,0 +1,40 @@
+.trackerCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 27%;
+    height: 45%;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+.trackerCard__container{
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    background-color:  hsl(235, 46%, 20%);
+}
+.trackerCard__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.trackerCard__header > img{
+    height: 10px;
+    width: 30px;
+}
+.trackerCard__header > h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.trackerCard__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

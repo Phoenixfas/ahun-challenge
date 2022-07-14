@@ -1,0 +1,56 @@
+.userCard{
+    height: 100%;
+    width: 22%;
+    border-radius: 20px;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    border-radius: 20px;
+    background-color: hsl(246, 80%, 60%);
+    padding: 30px 30px;
+}
+.profile__pic{
+    height: 30%;
+    width: 40%;
+    object-fit: contain;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.profile__name{
+    color: #fff;
+    
+}
+.profile__name > h5{
+    color: #ffffff77;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.profile__name > h1{
+    font-weight: 300;
+    margin-top: 0;
+}
+.timeInterval{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+    padding: 0px 30px;
+}
+.timeInterval > h3{
+    color: #ffffff77;
+    font-weight: 300;
+    margin: 0;
+}
+.timeInterval > h3:hover{
+    color: #fff;
+}
