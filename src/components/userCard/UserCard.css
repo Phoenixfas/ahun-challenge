@@ -17,7 +17,6 @@
 }
 .profile__pic{
     height: 30%;
-    width: 40%;
     object-fit: contain;
 }
 .img{
@@ -46,11 +45,45 @@
     height: 40%;
     padding: 0px 30px;
 }
-.timeInterval > h3{
+.h3{
     color: #ffffff77;
     font-weight: 300;
     margin: 0;
 }
-.timeInterval > h3:hover{
+.h3:hover{
     color: #fff;
+    cursor: pointer;
+}
+.h3.active{
+    color: #fff;
+}
+
+@media screen and (max-width: 375px){
+    .userCard{
+        height: 250px;
+        width: 100%;
+        overflow: visible;
+        margin-bottom: 10px;
+    }
+    .profile{
+        height: 40%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .profile__pic{
+        height: 100%;
+        margin-right: 10px;
+    }
+    .profile__name > h5{
+        margin-bottom: 5px;
+    }
+    .profile__name > h1{
+        font-size: 1.5rem;
+    }
+    .timeInterval{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 70%;
+    }
 }

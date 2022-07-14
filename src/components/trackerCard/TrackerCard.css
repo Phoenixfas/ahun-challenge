@@ -2,13 +2,40 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 27%;
+    width: 30%;
     height: 45%;
-    background-color: hsl(15, 100%, 70%);
     border-radius: 20px;
-    margin: 10px;
     overflow: hidden;
     color: #fff;
+    padding: 0;
+}
+.trackerCard.Wor{
+    background-color: hsl(15, 100%, 70%);
+}
+.trackerCard.Pla{
+    background-color: hsl(195, 74%, 62%);
+}
+.trackerCard.Stu{
+    background-color: hsl(348, 100%, 68%);
+}
+.trackerCard.Exe{
+    background-color: hsl(145, 58%, 55%);
+}
+.trackerCard.Soc{
+    background-color: hsl(264, 64%, 52%);
+}
+.trackerCard.Sel{
+    background-color: hsl(43, 84%, 65%);
+}
+.icon{
+    width: 20%;
+    height: 20%;
+    align-self: flex-end;
+    margin-right: 50px;
+    object-fit: cover;
+}
+.icon > img{
+    margin-top: -20px;
 }
 .trackerCard__container{
     justify-self: flex-end;
@@ -16,18 +43,25 @@
     flex-direction: column;
     height: 80%;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color:  hsl(235, 46%, 20%);
 }
+.trackerCard__container:hover{
+    cursor: pointer;
+}
+
 .trackerCard__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 30%;
 }
 .trackerCard__header > img{
-    height: 10px;
-    width: 30px;
+    height: 4px;
+    width: 15px;
 }
 .trackerCard__header > h3{
     font-size: 18px;
@@ -36,5 +70,41 @@
 .trackerCard__body{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    padding: 0 20px;
+    height: 70%;
+}
+.trackerCard__body > h2{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0 0 0 10px;
+}
+.trackerCard__body > h5{
+    font-weight: 300;
+    color: #ffffff77;
+    margin: 5px 0 0 10px;
+}
+
+@media screen and (max-width: 375px){
+    .trackerCard{
+        width: 100%;
+        height: 165px;
+        margin: 10px 0;
+    }
+    .trackerCard__body{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .trackerCard__body > h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .trackerCard__body > h5{
+        margin: 0;
+    }
+    .trackerCard__header{
+        height: 40%;
+        padding-top: 10px;
+        padding-bottom: -30px;
+    }
 }
